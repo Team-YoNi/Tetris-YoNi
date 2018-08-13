@@ -35,7 +35,22 @@
             }
         }
 
-        public int Y { get; set; } // TODO: Make the same as X, but consider, that Y is relevant to the Console's Height
+        public int Y
+        {
+            get
+            {
+                return this.y;
+            }
+            set
+            {
+                if (y < 0)
+                    throw new ArgumentException("The y of the block cannot be less than 0");
+                if (y > Console.WindowHeight)
+                    throw new ArgumentException($"The y of the block cannot be greater than the Console's Height {Console.WindowHeight}");
+
+                this.y = value;
+            }
+        }
 
         // Do not touch this property!
         public int[][] Model
