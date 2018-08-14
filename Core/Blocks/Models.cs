@@ -1,4 +1,6 @@
-﻿namespace Core.Blocks
+﻿using System.Collections.Generic;
+
+namespace Core.Blocks
 {
     public static class Models
     {
@@ -98,6 +100,14 @@
             get
             {
                 return seventhBlock;
+            }
+        }
+
+        public static List<int[][]> AllBlocks
+        {
+            get
+            {
+                return new List<int[][]>() { FirstBlock, SecondBlock, ThirdBlock, FourthBlock, FifthBlock, SixthBlock, SeventhBlock };
             }
         }
     }

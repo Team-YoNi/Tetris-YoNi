@@ -46,6 +46,7 @@
     <Compile Include="Blocks\Models.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stats\Points.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
