@@ -1,9 +1,9 @@
 ﻿namespace Tetris
 {
     using System;
-
-    using Tetris.Blocks;
     
+    using Core.Blocks;
+
     public class Startup
     {
         // this matrix is representig the console cells
@@ -35,7 +35,7 @@
                             if (block.X > 0)
                                 MoveBlockLeft(ref block);
                             break;
-                        // TODO: add a case for RightArrow... Hint: Make the constraint    if (block.X < Console.Width - modelWidth)    , then create method MoveBlockRight()
+                            // TODO: add a case for RightArrow... Hint: Make the constraint    if (block.X < Console.Width - modelWidth)    , then create method MoveBlockRight()
                     }
 
                     PrintGameMatrix();

@@ -1,4 +1,4 @@
-﻿namespace Tetris
+﻿namespace Core.Blocks
 {
     public static class Models
     {

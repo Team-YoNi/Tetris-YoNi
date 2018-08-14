@@ -1,4 +1,4 @@
-﻿namespace Tetris.Blocks
+﻿namespace Core.Blocks
 {
     using System;
 
