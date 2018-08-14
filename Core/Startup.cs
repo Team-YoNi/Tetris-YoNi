@@ -164,6 +164,8 @@
             //       So yeah, you should take model from the list "Model.AllBlocks".
 
             // NOTE: The .Next() method is using exclusive upper bound, so be careful to cover all models with the random number generated of this method
+
+            throw new NotImplementedException();
         }
 
         private static void MoveBlockLeft()
