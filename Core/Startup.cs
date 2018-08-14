@@ -157,15 +157,13 @@
 
         private static int[][] GetRandomModel()
         {
-            // TODO: The method should return random block model
+            //Have I done my job well, master? ;) 
 
-            // HINT: We already have a random generator as a field (randomGenerator). Now just use the .Next() method to generate random index (number between 0 and 6).
-            //       Then use the random index to take the model from the list of models (I created a property AllBlocks in Models.cs). 
-            //       So yeah, you should take model from the list "Model.AllBlocks".
+            int index = randomGenerator.Next(0, 7);
 
-            // NOTE: The .Next() method is using exclusive upper bound, so be careful to cover all models with the random number generated of this method
+            int[][] randomModel = Models.AllBlocks[index];
 
-            throw new NotImplementedException();
+            return randomModel;
         }
 
         private static void MoveBlockLeft()
