@@ -12,7 +12,7 @@
         public Block(int x, int y, int[][] model)
         {
             this.X = x;
-            this.Y = x;
+            this.Y = y;
             this.Model = model;
         }
 

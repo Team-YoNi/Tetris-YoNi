@@ -1,104 +1,102 @@
 ﻿namespace Tetris
 {
-    public class Models
+    public static class Models
     {
-        private readonly int[][] firstBlock =
+        private static readonly int[][] firstBlock =
             {
                 new[] { 1, 0, 0 },
                 new[] { 1, 1, 1 }
             };
 
-        private readonly int[][] secondBlock =
+        private static readonly int[][] secondBlock =
             {
                 new[] { 0, 0, 0, 0 },
                 new[] { 1, 1, 1, 1 }
             };
 
-        private readonly int[][] thirdBlock =
+        private static readonly int[][] thirdBlock =
             {
                 new[] { 0, 0, 1 },
                 new[] { 1, 1, 1 }
             };
 
-        private readonly int[][] fourthBlock =
+        private static readonly int[][] fourthBlock =
             {
                 new[] { 1, 1 },
                 new[] { 1, 1 }
             };
 
-        private readonly int[][] fifthBlock =
+        private static readonly int[][] fifthBlock =
             {
                 new[] { 0, 1, 1 },
                 new[] { 1, 1, 0 }
             };
 
-        private readonly int[][] sixthBlock =
+        private static readonly int[][] sixthBlock =
             {
                 new[] { 0, 1, 0 },
                 new[] { 1, 1, 1 }
             };
 
-        private readonly int[][] seventhBlock =
+        private static readonly int[][] seventhBlock =
             {
                 new[] { 1, 1, 0 },
                 new[] { 0, 1, 1 }
             };
 
-        public int[][] FirstBlock
+        public static int[][] FirstBlock
         {
             get
             {
-                return this.firstBlock;
+                return firstBlock;
             }
         }
 
-
-        public int[][] SecondBlock
+        public static int[][] SecondBlock
         {
             get
             {
-                return this.secondBlock;
+                return secondBlock;
             }
         }
 
-
-        public int[][] ThirdBlock
+        public static int[][] ThirdBlock
         {
             get
             {
-                return this.thirdBlock;
+                return thirdBlock;
             }
         }
 
-        public int[][] FourthBlock
+        public static int[][] FourthBlock
         {
             get
             {
-                return this.fourthBlock;
+                return fourthBlock;
             }
         }
 
-        public int[][] FifthBlock
+        public static int[][] FifthBlock
         {
             get
             {
-                return this.fifthBlock;
+                return fifthBlock;
             }
         }
 
-        public int[][] SixthBlock
+        public static int[][] SixthBlock
         {
             get
             {
-                return this.sixthBlock;
+                return sixthBlock;
             }
         }
 
-        public int[][] SeventhBlock
+        public static int[][] SeventhBlock
         {
             get
             {
-                return this.seventhBlock;
+                return seventhBlock;
             }
         }
     }
