@@ -24,6 +24,7 @@
             {
                 new[] { 1, 1 },
                 new[] { 1, 1 }
+
             };
 
         private static readonly int[][] fifthBlock =

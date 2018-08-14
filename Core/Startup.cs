@@ -36,7 +36,10 @@
                             if (block.X > 0)
                                 MoveBlockLeft(ref block);
                             break;
-                            // TODO: add a case for RightArrow... Hint: Make the constraint    if (block.X < Console.Width - modelWidth)    , then create method MoveBlockRight()
+                        case ConsoleKey.RightArrow:
+                            if (block.X < Console.WindowWidth - modelWidth)
+                                MoveBlockRight(ref block);
+                            break;
                     }
 
                     PrintGameMatrix();
@@ -98,6 +101,15 @@
             ClearBlockFromGameMatrix(block);
 
             block = new Block(block.X - 1, block.Y, block.Model); // We changed to (block.X - 1) to move one col left
+
+            AddBlockOnGameMatrix(block);
+        }
+
+        private static void MoveBlockRight(ref Block block)
+        {
+            ClearBlockFromGameMatrix(block);
+
+            block = new Block(block.X + 1, block.Y, block.Model); // We changed to (block.X + 1) to move one col right
 
             AddBlockOnGameMatrix(block);
         }
