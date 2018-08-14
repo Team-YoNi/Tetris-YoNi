@@ -26,6 +26,7 @@
                 Block block = GetNewBlock();
 
                 AddBlockOnGameMatrix(block);
+                PrintGameMatrix();
 
                 while (true)
                 {
